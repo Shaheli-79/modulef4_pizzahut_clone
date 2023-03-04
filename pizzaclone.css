@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000000;
+    color: white;
+}
+nav
+{   display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-wrap: row wrap;
+    padding: 20px 40px;
+    font-size: 15px;
+    position: relative;
+    width:1300px;
+    font-family: 'Ruda', sans-serif;
+}
+.left{
+    padding-left: 3vw;
+}
+h3{
+    display: block;
+    font-size: 2.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.mid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
+div{
+    display: block;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
+.right > li
+{
+    gap: 30px;
+}
+nav > div > li
+{
+    list-style: none;
+    
+}
+.mid{
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 20px;
+}
+li
+{
+    text-align: -webkit-match-parent;
+}
+.img {
+    display: flex;
+}
+@media screen and (max-width: 700px)
+{
+.img 
+{
+    font-size: 70%;
+}
+}
+.text
+{
+    position: absolute;
+    width: 50%;
+    padding: 120px 60px;
+    top: 25%;
+    left: 12%;
+    right: 50%;
+    z-index: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 8.7vw;
+}
+.text span
+{
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.5vw;
+}
+.text p
+{
+       font-family: 'Ruda';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.3vw;
+        letter-spacing: 0.09em;
+        font-family: 'ruda',sans-serif;
+}
+.text > .img
+{
+    width: 68%;
+    height: 7%;
+    padding: 1.5vw 0vw;
+
+}
+.container {
+    padding: 0 80px;
+}
+@media screen and (max-width: 700px)
+{
+.container {
+    padding: 0 10px;
+}
+}
+section {
+    display: block;
+}
+.sec1 {
+    padding: 40px 0;
+}
+.sec1 > h1 {
+   width: 35%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    font-family: 'Quattrocento',Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+    border-bottom: 4px solid red; 
+    
+ /*   width: 35%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+    font-family: 'Quattrocento', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size:0px;
+    color:  #FFFFFF; */
+}
+@media screen and (max-width: 700px)
+{
+    .sec1-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+.sec1-child {
+    display: flex;
+    margin: auto;
+    flex-wrap: row wrap;
+    padding-top: 30px;
+    gap: 30px;
+}
+.sec1-child > p 
+{
+    margin-top: 10px;
+    border-top: 2px solid red;
+    padding-top: 5px;
+    line-height: 1.5em;
+    
+font-family: 'Ruda', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sec1-child>img {
+    max-width: 50%;
+}
+@media screen and (max-width: 700px)
+{
+.sec-1-child > img 
+{
+    max-width: 100%;
+}
+}
+.sec2 {
+    padding: 40px 0px;
+}
+.sec2 > h1 {
+    /* width: 30%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+    font-family: 'Quattrocento';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 0px;
+display: flex;
+align-items: center; */
+
+width: 35%;
+text-align: center;
+margin: auto;
+padding-bottom: 5px;
+border-bottom: 4px solid red;
+font-family: 'Quattrocento', Arial, Helvetica, sans-serif;
+font-weight: 300;
+font-size:40px
+}
+.sec2>p {
+    padding: 30px 0 50px 0;
+    
+    margin-top: 10px;
+    line-height: 1.5em; 
+font-family: 'Ruda', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+@media screen and (max-width: 700px)
+{
+.menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 90%;
+}
+}
+.list {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.listleft > img {
+    width: 100%;
+    height:auto
+}
+.listright > h3 {
+    color: #F2C94C;
+ font-family: 'Ruda',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 0px;
+ 
+
+display: flex;
+align-items: center;
+}
+
+@media screen and (max-width: 700px)
+{
+.listright>h3 {
+    /* color: #F2C94C; */
+    padding-bottom: 0;
+}
+}
+.listright>p {
+    line-height: 1.7em;
+    font-family: 'Ruda',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+letter-spacing: 0.06em;
+}
+.sec3 {
+    padding: 40px 0px;
+}
+.sec3 > h1 {
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+    font-family: 'Quattrocento', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size:60px
+}
+
+@media screen and (max-width: 700px)
+{
+    .sec1 > h1 {
+        width: 35%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 5px;
+        border-bottom: 4px solid red;
+        font-family: 'Quattrocento', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size:45px
+    }    
+}
+@media screen and (max-width: 700px)
+{
+    .sec3 > h1 {
+        width: 35%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 5px;
+        border-bottom: 4px solid red;
+        font-family: 'Quattrocento', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size:50px
+    }    
+}
+
+@media screen and (max-width: 700px)
+{
+.find
+{
+    display: flex;
+    flex-direction: column;
+}
+}
+.find
+{
+    display: flex;
+    flex-wrap: row wrap;
+    width: 100%;
+    padding-top: 30px;
+    gap: 30px;
+}
+.findleft > p 
+{
+    padding-bottom: 30px;
+    font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 40px;
+letter-spacing: 0.06em;
+}
+.location {
+    display: flex;
+    gap: 10px;
+    font-family: 'Ruda',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+/* or 200% */
+
+letter-spacing: 0.09em;
+
+}
+.call {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+/* or 200% */
+
+letter-spacing: 0.0em;
+}
+.ph {
+    gap: 10px;
+}
+.findright > img {
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+.fleft > img {
+    width: 150px;
+}
+.sms {
+    display: flex;
+    gap: 10px;
+    font-family: 'Ruda';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 784px)
+{
+footer
+{
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 784px)
+{
+.mid
+{
+    display: flex;
+    flex-direction: column wrap;
+}
+}
+@media screen and (max-width: 784px)
+{
+.mid
+{
+    display: flex;
+    flex-direction: column wrap;
+}
+}
